@@ -5,6 +5,6 @@ app.listen(3000, () => {
     console.log("App is Running Successfully")
 })
 
-app.get("/", ()=> {
-    console.log("This is HomePage ");
+app.get("/", (req,res)=> {
+    res.send(<h1>This is My Home</h1>)
 })
