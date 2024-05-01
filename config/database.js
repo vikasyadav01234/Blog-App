@@ -8,5 +8,9 @@ const connectWithDb = () => {
         useUnifiedTopology: true,
     })
     .then(console.log("DB Connected Successfully"))
-    .catch()
+    .catch((error) => {
+        console.log("DB Facing Connection Issues");
+        console.log(error);
+        process
+    })
 };
