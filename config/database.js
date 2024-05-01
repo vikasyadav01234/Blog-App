@@ -14,3 +14,4 @@ const connectWithDb = () => {
         process.exit(1);
     })
 };
+module.exports = connectWithDb;
