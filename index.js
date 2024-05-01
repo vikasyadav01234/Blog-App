@@ -6,5 +6,5 @@ app.listen(3000, () => {
 })
 
 app.get("/", (req,res)=> {
-    res.send(<h1>This is My Home</h1>)
+    res.send(`<h1>This is My Home</h1>`)
 })
