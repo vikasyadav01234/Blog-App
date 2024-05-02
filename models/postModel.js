@@ -23,3 +23,5 @@ const commentSchema = new mongoose.Schema({
         ref: "Comment"
     }]
 });
+
+//export s
