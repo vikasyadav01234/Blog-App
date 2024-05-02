@@ -5,5 +5,6 @@ const mongoose = require("mongoose");
 const commentSchema new mongoose.Schema({
     post:{
         type: mongoose.Schema.Types.ObjectId,
+        ref: "POST", //reference to the post model
     }
 })
