@@ -17,3 +17,7 @@ connectWithDb();
 app.listen(PORT, () => {
     console.log(`App is started at Port no ${PORT}`);
 })
+
+app.get("/", (req,res) => {
+    res.send(`<h1>This is Home Page</h1>`)
+})
