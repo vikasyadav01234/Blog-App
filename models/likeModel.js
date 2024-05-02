@@ -11,8 +11,8 @@ const commentSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    body: {
-        type:String,
-        required:true,
-    }
+    
 });
+
+//export 
+module.exports = mongoose.model()
