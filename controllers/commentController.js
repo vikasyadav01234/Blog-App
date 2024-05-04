@@ -17,7 +17,9 @@ exports.createComment = async (req, res) => {
         const udpatedPost = await Post.findByIdAndUpdate(post, {$push:{comments: savedComment._id}},{new: true})
                 .populate("comments")//populate the comments array with comment documents
                 .exec();
-        res.json
+        res.json({
+            post: udpatedPost,
+        });
     }
     catch(error){
 
