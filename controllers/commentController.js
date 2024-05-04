@@ -13,6 +13,8 @@ exports.createComment = async (req, res) => {
         });
         //save the new comment into the database
         const saveComment = await comment.save();
+        //find the post by ID, add the new commment to its comment array
+        const udpatedPost = await Post.findByIdAndUpdate
     }
     catch(error){
 
