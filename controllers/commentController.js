@@ -10,7 +10,9 @@ exports.createComment = async (req, res) => {
         //create a comment objects
         const comment = new Comment({
             post,user,body
-        })
+        });
+        //save the new comment into the database
+        const saveComment = await comment.save();
     }
     catch(error){
 
