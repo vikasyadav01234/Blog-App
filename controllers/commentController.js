@@ -6,7 +6,11 @@ const Comment = require("../models/commetModel");
 exports.createComment = async (req, res) => {
     try{
         //fetch data from req body
-        const {post, user, body} = req.body
+        const {post, user, body} = req.body;
+        //create a comment objects
+        const comment = new Comment({
+            post,user,body
+        })
     }
     catch(error){
 
